@@ -1,0 +1,175 @@
+html, body {
+	background-color: rgb(241, 241, 241);
+	color: rgb(9, 9, 9);
+	margin: 0;
+	padding: 0;
+	width: 100%;
+    font-size:1.5vw;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+::selection {
+    color: #71eee1;
+    background:  rgb(12, 179, 201);
+  }
+
+@font-face { font-family: Damel; src: url('dDamel.ttf'); } 
+@font-face { font-family: Damel; font-weight: bold; src: url('dDamel.ttf');}
+
+@font-face { font-family: Monocrone; src: url('Ropers.ttf'); } 
+@font-face { font-family: Monocrone; font-weight: bold; src: url('Ropers.ttf');}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    padding:0;
+    font-family: "Monocrone", "Palatino Linotype", "Times New Roman";
+    color: #6073ad;
+    font-weight: bold;
+}
+
+#allcontent {
+     width:78%; 
+     float:left; 
+	padding:1%; 
+	overflow:hidden; 
+}
+
+#myInfo {
+	background: #EBD5EB; 
+}
+
+#content {
+	background: #ededed; 
+}
+
+header {
+     background-color: #79d7ce;
+    color: rgb(71, 216, 216);
+    text-align: center;
+    align-self: center;
+    margin: 0;
+	padding: 15px;
+}
+
+figure {
+    margin: 10px; 
+    width: 45%;
+    float:left;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+.myPh { 
+     max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+figcaption { 
+     text-align: center; }
+
+.myPhF {
+    width: 30%;
+}
+
+#PhtOfFriends {
+    border-radius: 16px;
+    max-width:100%;
+    height: auto;
+}
+
+#wrapper { 
+	width:100%;
+	overflow:hidden;
+	margin:0 auto;
+	min-height:calc(100% - 52px); 
+	padding:1%; 
+}
+
+footer { 
+	height:auto;
+	background:rgb(132, 132, 132);
+	color:#FFF;
+	text-align:center;
+	margin-top:10px;
+	padding:5px;
+}
+
+.pointer {
+    scroll-behavior: smooth;
+    text-align: right;
+}
+
+.links a {
+    text-decoration:none;
+    color:white;
+}
+
+.links a:hover {
+    color:black;
+}
+
+a {
+	color: #5d7bd4; 
+    text-decoration:none;
+   
+}
+
+nav {	
+	width: 22%;
+	font-family:'Damel';
+    font-size:2.5vw;
+	overflow: hidden;
+    padding:1%; 
+}
+
+nav ul li {
+	list-style-type:none; 
+	
+}
+
+nav ul > li:hover > a	{
+	color: #221abd;
+}
+
+@media only screen and (max-width: 700px) {
+    nav {width:95%;
+         position:absolute; 
+         height:20%;
+         text-align:right;
+        }
+    nav ul ul {
+        display:inline;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li  {display:inline}
+    nav ul li::after {content: " |";}
+    #allcontent {width: 98%;position:relative; top:10%; margin-top:5%;}
+ } 
+
+ @media only screen and (max-width: 500px) {
+    nav {width:95%; position:absolute; height:20%;}
+    nav ul ul {
+        display:none;
+    }
+    html, body {
+        font-size:3vw;
+    }
+    nav {
+        font-size:3.5vw;
+        text-align:right;
+    }
+    nav ul li {display:inline}
+    nav ul li::after {content: " |";}
+    #allcontent {width: 98%;position:relative; top:10%; margin-top:5%;}
+  }

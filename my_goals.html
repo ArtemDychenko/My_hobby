@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<link rel="stylesheet" href="my_goals.css">
+      <title>My_accomplishments</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.css" >
+        <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.structure.css" >
+        <link rel="stylesheet" href="jquery-ui-1.13.2.custom/jquery-ui.theme.css" >
+     
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1 class="font" id="mainName" >My accomplishments</h1>
+            </header>
+
+            <div id="content">
+                <div>
+                    <table id="tableAdd"> 
+                        <tr class="font">
+                            <th></th>
+                            <th>Wysota, m</th>
+                            <th>Kiedy to zrobiłem</th>
+                            <th>Jak ciężko było</th>
+                            <th>kraj</th>
+                            <th>kilka słow jeszcze</th>
+                        </tr>
+                        <tr>
+                            <td class="font">Petros</td>
+                            <td>2020</td>
+                            <td>04/07/2021</td>
+                            <td class="emoji">&#128548;</td>
+                            <td>Ukraina</td>
+                            <td>zejście było trudne</td>
+                        </tr>
+                        <tr>
+                            <td class="font">Hoverla</td>
+                            <td>2061</td>
+                            <td>05/07/2021</td>
+                            <td class="emoji">&#128517;</td>
+                            <td>Ukraina</td>
+                            <td>Było łatwo</td>
+                        </tr>
+                        <tr id="tableForm">
+                            <td id="tableName" class="font">Pip Ivan</td>
+                            <td id="tableAltitude" >2022</td>
+                            <td id="tableDate" >07/07/2021</td>
+                            <td id="tableEmoji" class="emoji">&#128517;</td>
+                            <td id="tableCountry" >Ukraina</td>
+                            <td id="tableWords">ławka na szczycie</td>
+                        </tr>
+                    
+                    </table>
+                </div>
+
+                <h2>To add a new accomplishment</h2>
+                <form method="post" id="doneGoal">
+                    <div id="textPoles">
+                    <label for="nameOfPeak" >Name of peak:</label><br>
+                    <input style="padding:0.5%; font-size: 1.5vw;" id="nameOfPeak" name="nameOfPeak"  type="text" placeholder="Enter name" ><br>
+                    <label  for="nameOfCountry">Name of country:</label><br>
+                    <input style="padding:0.5%; font-size: 1.5vw;" type="text" id="nameOfCountry" name="nameOfCountry" placeholder="Enter country"><br></div>
+                    <p>Date: <input type="text" style="padding:0.25%; font-size: 1.5vw; width: 13%; " id="datepicker"></p>
+                    <p>Grade of hard:</p> 
+                
+                    <input class="radio" type="radio" id="radio1" name="grOfImp" value="&#128512;" title="Łatwo" checked>
+                    <label for="radio1">&#128512;</label>
+                    <input type="radio" id="radio2" name="grOfImp" value="&#128517;" title="Nie trudno">
+                    <label for="radio2">&#128517;</label>
+                    <input type="radio" id="radio3" name="grOfImp" value="&#128548;" title="Dość trudno">
+                    <label for="radio3">&#128548;</label>
+                    <input type="radio" id="radio4" name="grOfImp" value="&#128546;" title="Ciężko">
+                    <label for="radio4">&#128546;</label>
+                    <input type="radio" id="radio5" name="grOfImp" value="&#128565;" title="Bardzo ciężko">
+                    <label for="radio5">&#128565;</label><br>
+                    <br>
+                    <label for="altitude">Altitude:</label><br>
+                    <input style="padding:0.5%; font-size: 1.5vw; width: 10%;" id="altitude" name="altitude"  type="number" placeholder="Enter altitude"><br>
+                <br>
+                <textarea rows="2" cols="20" style="font-size: 1.5vw;" id="textOfArea" name="text" placeholder="Enter a couple words more"></textarea>
+           <p class="space"> <input class="sub1" type="submit" value="Submit" id="save">  <input class="res1" type="reset"></p>
+                </form>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="active" href="hobby.html">Main page</a></li>
+                    <li><a class="active" href="galery.html">Memories</a></li>
+                    <li><a class="active" href="my_goals.html">My results</a></li>	
+                </ul> 
+                <svg width="450" height="200"> 
+                <rect id="rect1" x="30" y="10" rx="5" ry="2" width="70%" height="10%"/>
+                </svg>
+            </nav>
+        </div>
+        <footer>Mojehobby.org</footer>
+     <script src="jquery-3.6.1.min.js" type="text/javascript"></script>
+    <script src="jquery-3.6.1.js"></script>
+    <script src="jquery-ui-1.13.2.custom/jquery-ui.js" type="text/javascript"></script>
+    <script src="goal.js"></script>
+    </body>
+   
+</html>
